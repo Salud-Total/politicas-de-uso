@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10b981" />
+  <title>Políticas de Uso y Privacidad | Salud Total App SAC</title>
+  <!-- Favicon / Iconos (agrega tus archivos en /assets) -->
+  <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/logo.svg" />
+  <style>
+    :root {
+      --bg: #0b1320;
+      --card: #111726;
+      --muted: #9aa3b2;
+      --text: #e6eaf2;
+      --brand: #10b981;
+      --brand-2: #34d399;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --ok: #22c55e;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --maxw: 980px;
+    }
+
+    /* Reset básico */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, #12203a 0%, var(--bg) 55%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 40px auto;
+      padding: 0 20px 80px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.06);
+      backdrop-filter: blur(6px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header.hero {
+      padding: 28px 26px 22px;
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .logo {
+      width: 56px; height: 56px; border-radius: 14px;
+      display: inline-block; background: #0f172a url('assets/logo.svg') center/cover no-repeat; border: 1px solid rgba(255,255,255,.08);
+    }
+    .title h1 { margin: 0; font-size: 1.35rem; letter-spacing: .2px; }
+    .title p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+
+    .badge {
+      padding: 6px 10px; border-radius: 999px; font-size: .8rem; border: 1px solid rgba(255,255,255,.1);
+      background: linear-gradient(180deg, rgba(16,185,129,.18), rgba(16,185,129,.12));
+      color: #dcfce7;
+    }
+
+    nav.toc { padding: 20px 22px; display: grid; gap: 10px; }
+    nav.toc h2 { font-size: 1rem; margin: 0 0 4px; color: var(--muted); font-weight: 600; }
+    nav.toc a { color: var(--text); text-decoration: none; padding: 10px 12px; border-radius: 12px; display: block;
+      border: 1px solid rgba(255,255,255,.06);
+      background: rgba(255,255,255,.02);
+    }
+    nav.toc a:hover { outline: 2px solid rgba(52,211,153,.35); }
+
+    main { padding: 10px 22px 28px; }
+    section { padding: 24px 0; border-top: 1px dashed rgba(255,255,255,.08); }
+    section:first-of-type { border-top: 0; }
+
+    h2 { font-size: 1.2rem; margin: 0 0 8px; }
+    h3 { font-size: 1.05rem; margin: 18px 0 6px; color: #dbeafe; }
+    p { margin: 10px 0; }
+    ul, ol { padding-left: 18px; }
+    li { margin: 6px 0; }
+
+    .note { border-left: 3px solid var(--brand); padding: 10px 12px; background: rgba(16,185,129,.08); border-radius: 10px; }
+    .muted { color: var(--muted); }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,.1); }
+
+    .accept {
+      display: flex; align-items: center; gap: 8px; padding: 14px 16px; border: 1px solid rgba(255,255,255,.08); border-radius: 12px;
+      background: linear-gradient(180deg, rgba(59,130,246,.15), rgba(59,130,246,.08));
+    }
+
+    footer { color: var(--muted); font-size: .9rem; padding: 22px; border-top: 1px solid rgba(255,255,255,.06); }
+
+    /* Links */
+    a { color: var(--brand-2); }
+    a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 660px) {
+      header.hero { grid-template-columns: 48px 1fr; }
+      .badge { display: none; }
+    }
+
+    /* Imprimir */
+    @media print {
+      body { background: #fff; color: #111826; }
+      .wrap { margin: 0; padding: 0; }
+      .card { box-shadow: none; border: 1px solid #e5e7eb; }
+      .logo { background: none; }
+      a { color: #065f46; }
+      nav.toc a { border-color: #e5e7eb; }
+      .accept { background: #f3f4f6; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="hero">
+        <i class="logo" aria-hidden="true"></i>
+        <div class="title">
+          <h1>SALUD TOTAL APP SAC</h1>
+          <p>Políticas de Uso y Política de Privacidad</p>
+        </div>
+        <span class="badge">Última actualización: 27 de agosto de 2025</span>
+      </header>
+
+      <nav class="toc">
+        <h2>Contenido</h2>
+        <a href="#introduccion">1. Introducción</a>
+        <a href="#uso">2. Políticas de Uso</a>
+        <a href="#privacidad">3. Política de Privacidad</a>
+        <a href="#derechos">4. Derechos de los Titulares</a>
+        <a href="#menores">5. Menores de Edad</a>
+        <a href="#seguridad">6. Seguridad y Conservación</a>
+        <a href="#terceros">7. Proveedores y Transferencias</a>
+        <a href="#consentimiento">8. Consentimiento y Aceptación</a>
+        <a href="#contacto">9. Contacto</a>
+      </nav>
+
+      <main>
+        <section id="introduccion">
+          <h2>1. Introducción</h2>
+          <p>
+            <strong>Salud Total</strong> es un aplicativo móvil de salud preventiva diseñado para contribuir al bienestar de las personas y facilitar el acceso a servicios médicos y relacionados.
+            Las alertas preventivas y recomendaciones se basan en guías y lineamientos de organismos de salud locales e internacionales, respaldados por evidencia científica.
+          </p>
+          <p class="note">
+            Salud Total App SAC se compromete con el respeto y cumplimiento de la <strong>Ley N° 29733 – Ley de Protección de Datos Personales</strong> y su normativa complementaria en el Perú.
+            La información personal suministrada será tratada con diligencia y resguardada en sistemas informáticos bajo nuestra responsabilidad, incluidos servicios en la nube.
+          </p>
+        </section>
+
+        <section id="uso">
+          <h2>2. Políticas de Uso</h2>
+          <h3>2.1 Naturaleza del servicio</h3>
+          <p>
+            Salud Total actúa como <strong>intermediaria</strong> entre usuarios y empresas prestadoras de servicios de salud (EPS/establecimientos/ profesionales). La atención brindada al paciente y cualquier situación derivada es de <strong>exclusiva responsabilidad</strong> de la prestadora elegida por el usuario.
+            Salud Total App SAC no asume responsabilidad por actos, omisiones o resultados de terceros.
+          </p>
+          <h3>2.2 Requisitos de uso</h3>
+          <ul>
+            <li>El usuario declara que la información que registra es <strong>veraz, actual y exacta</strong>.</li>
+            <li>El contenido de la app <strong>no sustituye</strong> el diagnóstico, tratamiento ni consejo de un profesional de la salud.</li>
+            <li>Se prohíbe el uso indebido, ilegal o que afecte derechos de terceros o la seguridad de la plataforma.</li>
+          </ul>
+          <h3>2.3 Contenido informativo</h3>
+          <p>
+            Los algoritmos y reglas de negocio derivan de recomendaciones de organismos acreditados. No obstante, pueden existir variaciones clínicas; por ello, recomendamos consultar a un profesional de salud ante cualquier duda o síntoma.
+          </p>
+        </section>
+
+        <section id="privacidad">
+          <h2>3. Política de Privacidad</h2>
+          <p>
+            Esta política explica cómo tratamos datos personales y datos sensibles de salud. Si publicas tu política en la Play Store, puedes usar la URL oficial de tu sitio (por ejemplo: <span class="kbd">https://saludtotalapp.com/privacidad</span> o <span class="kbd">https://saludtotalapp.com/terminos_condiciones</span>).
+          </p>
+          <h3>3.1 Datos que podemos recolectar</h3>
+          <ul>
+            <li>Identificación y contacto: nombre, documento, correo, teléfono.</li>
+            <li>Datos demográficos: edad, sexo, ubicación (aproximada o precisa si la autorizas).</li>
+            <li>Datos de salud proporcionados por ti: antecedentes, síntomas, hábitos, resultados/mediciones.</li>
+            <li>Datos técnicos: identificadores del dispositivo, sistema operativo, registros de uso, cookies o tecnologías similares.</li>
+          </ul>
+          <h3>3.2 Finalidades del tratamiento</h3>
+          <ul>
+            <li>Prestación del servicio de la app, generación de alertas, recordatorios y recomendaciones.</li>
+            <li>Creación de tu cuenta, soporte, notificaciones y comunicaciones esenciales.</li>
+            <li>Mejora del producto, métricas de uso y seguridad.</li>
+            <li><strong>Investigación y docencia</strong>: elaboración de estadísticas y estudios, usando preferentemente 
+              datos <strong>disociados o seudonimizados</strong> sin información que te identifique directamente.</li>
+          </ul>
+          <h3>3.3 Base legal</h3>
+          <p>
+            Tratamos tus datos con tu <strong>consentimiento</strong> y para la <strong>ejecución de la relación contractual</strong> (provisión del servicio). En casos de interés público en salud o cumplimiento normativo, podremos tratar datos conforme a la ley.
+          </p>
+          <h3>3.4 Compartición de datos</h3>
+          <ul>
+            <li>Con prestadores de salud que tú selecciones para la atención.</li>
+            <li>Con proveedores tecnológicos (alojamiento en nube, analítica, mensajería) bajo contratos de encargo de tratamiento y obligaciones de confidencialidad.</li>
+            <li>Para investigación y docencia, con datos disociados cuando sea posible.</li>
+            <li>Por exigencia legal o autoridad competente.</li>
+          </ul>
+          <h3>3.5 Decisiones automatizadas</h3>
+          <p>
+            Las alertas y sugerencias pueden generarse por reglas/algoritmos. No adoptamos decisiones que produzcan efectos jurídicos sin intervención humana en los casos que la ley lo exija.
+          </p>
+        </section>
+
+        <section id="derechos">
+          <h2>4. Derechos de los Titulares</h2>
+          <p>
+            Puedes ejercer los derechos de <strong>Acceso, Rectificación, Cancelación y Oposición (ARCO)</strong>, así como revocar tu consentimiento, conforme a la Ley N° 29733.
+          </p>
+          <ul>
+            <li><strong>Acceso</strong>: conocer los datos que tratamos y las condiciones de su tratamiento.</li>
+            <li><strong>Rectificación</strong>: actualizar o corregir datos inexactos.</li>
+            <li><strong>Cancelación</strong>: solicitar la supresión cuando corresponda legalmente.</li>
+            <li><strong>Oposición</strong>: oponerte a tratamientos para finalidades no necesarias o con fines distintos a los consentidos.</li>
+          </ul>
+          <p>Para ejercer estos derechos, revisa la sección <a href="#contacto">Contacto</a>.</p>
+        </section>
+
+        <section id="menores">
+          <h2>5. Menores de Edad</h2>
+          <p>
+            Si el público objetivo <strong>incluye menores de 13 años</strong>, la app deberá contar con controles parentales y consentimiento verificable del padre/madre o tutor.
+            No recabamos intencionalmente datos de menores sin las autorizaciones correspondientes. Si detectamos un registro sin consentimiento válido, tomaremos medidas para eliminar los datos.
+          </p>
+        </section>
+
+        <section id="seguridad">
+          <h2>6. Seguridad y Conservación</h2>
+          <ul>
+            <li>Aplicamos medidas técnicas y organizativas razonables (cifrado en tránsito, controles de acceso, registros de actividad).</li>
+            <li>Conservamos los datos por el tiempo necesario para las finalidades informadas y para cumplir obligaciones legales o regulatorias.</li>
+            <li>Una vez cumplidas las finalidades, procuramos la <strong>supresión</strong> o <strong>disociación</strong> de los datos, salvo bloqueos legales.</li>
+          </ul>
+        </section>
+
+        <section id="terceros">
+          <h2>7. Proveedores y Transferencias</h2>
+          <p>
+            Podemos alojar y procesar datos en infraestructura en la nube fuera del Perú. Cuando corresponda, implementaremos 
+            <strong>cláusulas contractuales y salvaguardas</strong> para proteger tus datos, exigiendo a los encargados un nivel adecuado de seguridad y confidencialidad.
+          </p>
+        </section>
+
+        <section id="consentimiento">
+          <h2>8. Consentimiento y Aceptación</h2>
+          <p>
+            Al seleccionar la casilla <em>“Acepto los Términos de Uso y la Política de Privacidad”</em> dentro de la app, declaras haber leído y comprendido estos documentos y otorgas tu consentimiento para el tratamiento de datos descrito.
+          </p>
+          <div class="accept" role="group" aria-label="Aceptación de términos">
+            <input type="checkbox" id="accept" />
+            <label for="accept">Acepto los Términos de Uso y la Política de Privacidad</label>
+          </div>
+          <p class="muted">Puedes retirar tu consentimiento en cualquier momento desde los ajustes de tu cuenta o escribiéndonos.</p>
+        </section>
+
+        <section id="contacto">
+          <h2>9. Contacto</h2>
+          <p>
+            Responsable: <strong>Salud Total App SAC</strong><br />
+            <!-- Sitio web: <a href="https://saludtotalapp.com/terminos_condiciones" target="_blank" rel="noopener">saludtotalapp.com/terminos_condiciones</a><br /> -->
+            Correo: <a href="mailto:soporte@saludtotalapp.com">soporte@saludtotalapp.com</a><br />
+            Dirección: <span class="muted">Loma Umbrosa 250 Surco Lima 15039</span>
+          </p>
+          <p>
+            Para solicitudes ARCO o consultas sobre privacidad, coloca en el asunto: <span class="kbd">“Derechos ARCO – Salud Total”</span> y detalla tu requerimiento.
+          </p>
+        </section>
+
+        <section id="cambios">
+          <h2>10. Cambios a esta Política</h2>
+          <p>
+            Podemos actualizar estas políticas para reflejar cambios legales, técnicos o de negocio. Publicaremos la versión vigente y su fecha de actualización. El uso continuado de la app implica la aceptación de los cambios.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Salud Total App SAC. Todos los derechos reservados.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
